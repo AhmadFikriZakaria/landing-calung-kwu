@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Calung Banyumasan | Mandiri Laras Production</title>
+    <meta name="description" content="Calung khas Banyumas untuk mengiringi lengger dan kesenian daerah. Bilah bambu wulung dengan nada yang dicek memakai tuner."/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('mlp-theme'); } catch (e) {}
+            if (t !== 'light' && t !== 'dark') t = 'dark';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"/>
+    <link rel="stylesheet" href="assets/app.css"/>
+</head>
+<body class="min-h-screen flex flex-col text-ink font-body antialiased">
+
+<div id="demo-banner" class="demo-stripe text-center text-xs sm:text-[13px] font-semibold px-4 py-1.5">
+    <span class="bg-[#F6EBD6] px-2 py-0.5 rounded-sm"><span class="sm:hidden">Versi progres. Data masih data uji.</span><span class="hidden sm:inline">Landing page versi progres Kelompok 16. Data produk dan nomor WhatsApp masih data uji.</span></span>
+</div>
+
+<nav id="main-nav" class="sticky top-0 z-50 bg-paper/85 backdrop-blur-md border-b border-rule transition-shadow duration-300">
+    <div class="max-w-container-max mx-auto px-gutter h-[68px] flex items-center justify-between gap-6">
+        <a id="nav-logo" href="index.html" class="flex items-center gap-3 text-ink group">
+            <span class="text-amber transition-transform duration-500 group-hover:rotate-[-8deg]"><svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+    <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.4"/>
+    <g fill="currentColor">
+        <rect x="9" y="10" width="2.6" height="20" rx="1"/><rect x="12.9" y="11.5" width="2.6" height="17" rx="1"/><rect x="16.8" y="13" width="2.6" height="14" rx="1"/>
+        <rect x="20.7" y="14.5" width="2.6" height="11" rx="1"/><rect x="24.6" y="16" width="2.6" height="8" rx="1"/><rect x="28.5" y="17.5" width="2.6" height="5" rx="1"/>
+    </g>
+    <path d="M7 17.2 33 19.2M7 22.8 33 20.8" stroke="currentColor" stroke-width="1" opacity=".55"/>
+</svg></span>
+            <span class="leading-none">
+                <span class="block font-display text-[1.45rem] tracking-tight">Mandiri Laras</span>
+                <span class="block font-mono text-[10px] tracking-[0.3em] text-muted mt-0.5">PRODUCTION</span>
+            </span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+            <a id="nav-home" href="index.html" class="nav-link"><span class="font-mono text-[10px] text-muted mr-1.5">01</span>Beranda</a>
+            <a id="nav-profil" href="profil.html" class="nav-link"><span class="font-mono text-[10px] text-muted mr-1.5">02</span>Profil &amp; Proses</a>
+            <a id="nav-katalog" href="katalog.html" class="nav-link" aria-current="page"><span class="font-mono text-[10px] text-muted mr-1.5">03</span>Katalog</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+            <button type="button" id="theme-toggle" class="w-10 h-10 rounded-sm border border-rule text-ink-soft hover:text-amber hover:border-amber transition-colors flex items-center justify-center" aria-label="Ganti tema terang atau gelap">
+                <span class="theme-icon-dark"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span>
+                <span class="theme-icon-light"><svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></span>
+            </button>
+            <a id="nav-wa" href="https://wa.me/6280000000000?text=Halo%20Mandiri%20Laras%20Production%2C%20saya%20mau%20tanya%20soal%20pesanan%20alat%20musik%20bambu." target="_blank" rel="noopener" class="hidden md:inline-flex btn btn-line !py-2 !px-4 text-sm"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Tanya pesanan</a>
+            <button type="button" id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-sm border border-rule text-ink flex items-center justify-center" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="menu-icon-open"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg></span><span class="menu-icon-close"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden border-t border-rule bg-paper">
+        <div class="px-gutter py-3 flex flex-col">
+            <a href="index.html" class="py-3.5 border-b border-rule flex items-baseline gap-3 text-ink-soft"><span class="font-mono text-[11px] text-amber">01</span><span class="font-display text-2xl">Beranda</span></a>
+            <a href="profil.html" class="py-3.5 border-b border-rule flex items-baseline gap-3 text-ink-soft"><span class="font-mono text-[11px] text-amber">02</span><span class="font-display text-2xl">Profil &amp; Proses</span></a>
+            <a href="katalog.html" class="py-3.5 border-b border-rule flex items-baseline gap-3 text-ink font-semibold"><span class="font-mono text-[11px] text-amber">03</span><span class="font-display text-2xl">Katalog</span></a>
+            <a href="https://wa.me/6280000000000?text=Halo%20Mandiri%20Laras%20Production%2C%20saya%20mau%20tanya%20soal%20pesanan%20alat%20musik%20bambu." target="_blank" rel="noopener" class="btn btn-ink mt-4 mb-2"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Tanya pesanan lewat WhatsApp</a>
+        </div>
+    </div>
+</nav>
+
+<div class="flex-1">
+    <main id="konten">
+    <section class="max-w-container-max mx-auto px-gutter pt-8 pb-12">
+        <nav class="flex items-center gap-1.5 font-mono text-[11px] tracking-wide uppercase text-muted mb-8" aria-label="Breadcrumb">
+            <a href="katalog.html" class="hover:text-amber transition-colors">Katalog</a>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            <span class="text-ink">Calung Banyumasan</span>
+        </nav>
+
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+            <div class="lg:col-span-7 reveal-on-scroll">
+                <div class="relative overflow-hidden rounded-[3px] bg-tint aspect-[4/3]">
+                    <img src="assets/img/calung-jadi.jpg" alt="Calung Banyumasan" class="w-full h-full object-cover"/>
+                    <span class="absolute top-0 left-0 bg-paper/90 backdrop-blur px-3 py-1.5 font-mono text-xs tracking-wider">No. 01</span>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 reveal-on-scroll" data-delay="120">
+                <p class="eyebrow">Alat Musik</p>
+                <h1 class="font-display text-5xl md:text-6xl mt-2 leading-[1.02] tracking-tight">Calung Banyumasan</h1>
+                <p class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-clay"><span class="w-2 h-2 rounded-full bg-clay"></span>Dibuat sesuai pesanan</p>
+                <p class="mt-4 text-lg text-ink-soft leading-relaxed">Calung khas Banyumas untuk mengiringi lengger dan kesenian daerah. Bilah bambu wulung dengan nada yang dicek memakai tuner.</p>
+
+                <dl class="mt-7 border-t border-ink">
+                    <div class="py-4 border-b border-rule flex justify-between items-baseline gap-4">
+                        <dt class="eyebrow">Harga</dt>
+                        <dd class="font-display text-3xl text-ink">Rp 800.000</dd>
+                    </div>
+                    <div class="py-4 border-b border-rule flex justify-between items-baseline gap-4">
+                        <dt class="eyebrow">Perkiraan pengerjaan</dt>
+                        <dd class="font-semibold text-right">Dikonfirmasi saat pemesanan</dd>
+                    </div>
+                </dl>
+
+                <div class="prose-calung mt-6 text-ink-soft"><p>Calung dibuat satu per satu sesuai pesanan. Bilah dari bambu wulung yang dikeringkan alami, dirangkai pada rangka kayu.</p><ul><li>Harga di atas untuk pembelian langsung.</li><li>Untuk pedagang atau pembelian banyak, tanyakan harga lewat WhatsApp.</li><li>Nada bisa disesuaikan dengan kebutuhan lagu, sampaikan saat memesan.</li></ul></div>
+
+                <div class="mt-8">
+                    <a href="https://wa.me/6280000000000?text=Halo%20Mandiri%20Laras%20Production%2C%20saya%20tertarik%20dengan%20Calung%20Banyumasan.%20Apakah%20bisa%20dipesan%3F" target="_blank" rel="noopener" class="btn btn-ink w-full !py-4 text-base"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pesan lewat WhatsApp <svg class="w-4 h-4 arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></a>
+                    <p class="mt-3 text-xs text-muted leading-relaxed">Tombol ini membuka WhatsApp dengan pesan berisi nama produk. Percakapan berlangsung di WhatsApp, website tidak menyimpan isi chat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-container-max mx-auto px-gutter py-10">
+        <div class="flex items-end justify-between gap-4 mb-8 border-t border-ink pt-6">
+            <h2 class="font-display text-3xl md:text-4xl">Produk lain</h2>
+            <a href="katalog.html" class="link-arrow text-ink text-sm">Semua produk <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            <a href="produk-2.html" data-category="Alat Musik" class="product-item product-card group reveal-on-scroll flex flex-col" data-delay="90">
+                <div class="thumb relative aspect-[4/3] overflow-hidden bg-tint rounded-[3px]">
+                    <img src="assets/img/foto-menyusul.svg" alt="Set Angklung Standar 18 Nada" loading="lazy" decoding="async" class="w-full h-full object-cover"/>
+                    <span class="absolute top-0 left-0 bg-paper/90 backdrop-blur px-2.5 py-1 font-mono text-[11px] tracking-wider text-ink">No. 02</span>
+                </div>
+                <div class="pt-4 pb-1 border-b border-rule flex-1 flex flex-col">
+                    <p class="eyebrow">Alat Musik</p>
+                    <h3 class="mt-1.5 font-display text-[1.7rem] leading-tight text-ink"><span class="title">Set Angklung Standar 18 Nada</span></h3>
+                    <p class="mt-2 text-sm text-ink-soft line-clamp-2 flex-1">Paket angklung 18 nada yang siap dimainkan, cocok untuk sekolah, sanggar, dan kelompok kesenian.</p>
+                    <div class="mt-4 mb-3 flex items-end justify-between gap-3">
+                        <div>
+                            <span class="block font-semibold text-ink">Rp 850.000</span>
+                            <span class="mt-1 inline-flex items-center gap-1.5 text-xs text-clay font-medium"><span class="w-1.5 h-1.5 rounded-full bg-clay"></span>Dibuat sesuai pesanan</span>
+                        </div>
+                        <span class="w-9 h-9 shrink-0 border border-rule rounded-sm flex items-center justify-center text-ink-soft group-hover:bg-ink group-hover:text-paper group-hover:border-ink transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </div>
+            </a>
+            <a href="produk-3.html" data-category="Pelengkap" class="product-item product-card group reveal-on-scroll flex flex-col" data-delay="180">
+                <div class="thumb relative aspect-[4/3] overflow-hidden bg-tint rounded-[3px]">
+                    <img src="assets/img/foto-menyusul.svg" alt="Gentong Calung" loading="lazy" decoding="async" class="w-full h-full object-cover"/>
+                    <span class="absolute top-0 left-0 bg-paper/90 backdrop-blur px-2.5 py-1 font-mono text-[11px] tracking-wider text-ink">No. 03</span>
+                </div>
+                <div class="pt-4 pb-1 border-b border-rule flex-1 flex flex-col">
+                    <p class="eyebrow">Pelengkap</p>
+                    <h3 class="mt-1.5 font-display text-[1.7rem] leading-tight text-ink"><span class="title">Gentong Calung</span></h3>
+                    <p class="mt-2 text-sm text-ink-soft line-clamp-2 flex-1">Pelengkap set calung. Dijual per buah, satu pasang berisi dua buah.</p>
+                    <div class="mt-4 mb-3 flex items-end justify-between gap-3">
+                        <div>
+                            <span class="block font-semibold text-ink">Rp 60.000 / buah</span>
+                            <span class="mt-1 inline-flex items-center gap-1.5 text-xs text-clay font-medium"><span class="w-1.5 h-1.5 rounded-full bg-clay"></span>Dibuat sesuai pesanan</span>
+                        </div>
+                        <span class="w-9 h-9 shrink-0 border border-rule rounded-sm flex items-center justify-center text-ink-soft group-hover:bg-ink group-hover:text-paper group-hover:border-ink transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </div>
+            </a>
+            <a href="produk-4.html" data-category="Kerajinan Bambu" class="product-item product-card group reveal-on-scroll flex flex-col" data-delay="270">
+                <div class="thumb relative aspect-[4/3] overflow-hidden bg-tint rounded-[3px]">
+                    <img src="assets/img/foto-menyusul.svg" alt="Jam Dinding Rangka Angklung" loading="lazy" decoding="async" class="w-full h-full object-cover"/>
+                    <span class="absolute top-0 left-0 bg-paper/90 backdrop-blur px-2.5 py-1 font-mono text-[11px] tracking-wider text-ink">No. 04</span>
+                </div>
+                <div class="pt-4 pb-1 border-b border-rule flex-1 flex flex-col">
+                    <p class="eyebrow">Kerajinan Bambu</p>
+                    <h3 class="mt-1.5 font-display text-[1.7rem] leading-tight text-ink"><span class="title">Jam Dinding Rangka Angklung</span></h3>
+                    <p class="mt-2 text-sm text-ink-soft line-clamp-2 flex-1">Jam dinding dengan hiasan rangka angklung dari bambu, cocok untuk suvenir dan dekorasi.</p>
+                    <div class="mt-4 mb-3 flex items-end justify-between gap-3">
+                        <div>
+                            <span class="block font-semibold text-ink">Harga sesuai pesanan</span>
+                            <span class="mt-1 inline-flex items-center gap-1.5 text-xs text-clay font-medium"><span class="w-1.5 h-1.5 rounded-full bg-clay"></span>Dibuat sesuai pesanan</span>
+                        </div>
+                        <span class="w-9 h-9 shrink-0 border border-rule rounded-sm flex items-center justify-center text-ink-soft group-hover:bg-ink group-hover:text-paper group-hover:border-ink transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    </main>
+</div>
+
+<footer class="mt-20 border-t border-rule">
+    <div class="max-w-container-max mx-auto px-gutter pt-14 pb-10 grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div>
+            <div class="flex items-center gap-3 text-amber">
+                <svg class="w-11 h-11" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+    <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.4"/>
+    <g fill="currentColor">
+        <rect x="9" y="10" width="2.6" height="20" rx="1"/><rect x="12.9" y="11.5" width="2.6" height="17" rx="1"/><rect x="16.8" y="13" width="2.6" height="14" rx="1"/>
+        <rect x="20.7" y="14.5" width="2.6" height="11" rx="1"/><rect x="24.6" y="16" width="2.6" height="8" rx="1"/><rect x="28.5" y="17.5" width="2.6" height="5" rx="1"/>
+    </g>
+    <path d="M7 17.2 33 19.2M7 22.8 33 20.8" stroke="currentColor" stroke-width="1" opacity=".55"/>
+</svg>
+                <span class="font-display text-3xl text-ink">Mandiri Laras Production</span>
+            </div>
+            <p class="mt-4 text-ink-soft max-w-sm leading-relaxed">Calung dan angklung bambu wulung, dibuat sesuai pesanan.</p>
+            <div class="bilah mt-6" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div>
+            <p class="eyebrow mb-3">Bengkel</p>
+            <p class="text-sm text-ink-soft leading-relaxed">Desa Kemutug Lor, Kec. Baturraden, Kab. Banyumas, Jawa Tengah</p>
+        </div>
+        <div>
+            <p class="eyebrow mb-3">Hubungi</p>
+            <a href="https://wa.me/6280000000000?text=Halo%20Mandiri%20Laras%20Production%2C%20saya%20mau%20tanya%20soal%20pesanan%20alat%20musik%20bambu." target="_blank" rel="noopener" class="link-arrow text-sm"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a>
+        </div>
+    </div>
+    <div class="border-t border-rule">
+        <div class="max-w-container-max mx-auto px-gutter py-5 flex flex-col sm:flex-row justify-between gap-2 font-mono text-[11px] tracking-wide text-muted">
+            <p>&copy; 2026 Mandiri Laras Production</p>
+            <p>Website dikembangkan oleh Laras Digital Studio</p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
